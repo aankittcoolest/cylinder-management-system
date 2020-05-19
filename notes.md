@@ -1,7 +1,7 @@
 #### Admin
 
-- Ability to add/update/remove MRP of cylinder. (Example: 500 INR)
-- Ability to add/update/remove hawker(delivery-man) commission. (Example: 50 INR)
+- Ability to add/update/remove MRP of cylinder. (Examplele: 500 INR)
+- Ability to add/update/remove hawker delivery charge. (Example: 50 INR)
 - Ability to add/update/remove loadman (personnel). (Example: 4 persons)
 - Ability to add/update/remove hawkers(delivery-man)
 
