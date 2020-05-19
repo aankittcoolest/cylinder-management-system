@@ -1,28 +1,39 @@
-#### Admin
+#### Role Manager (Admin)
 
 - Ability to add/update/remove MRP of cylinder. (Example: 500 INR)
 - Ability to add/update/remove hawker(delivery-man) commission. (Example: 50 INR)
 - Ability to add/update/remove loadman (personnel). (Example: 4 persons)
 - Ability to add/update/remove hawkers(delivery-man)
-
-#### Role Manager
-
 - Ability to see all reports
 - See godown inventory
 - Ability to view MRP of cylinder. (Example: 500 INR)
 - Ability to view hawker(delivery-man) commission. (Example: 50 INR)
 - Ability to add/update loadman (personnel). (Example: 4 persons)
 - Ability to add/update hawkers(delivery-man)
+- Ability to bind deliveryman to specific loadman
 - Ability to see number of cylinders assigned by warehouse owner to each loadman .
 - Ability to see number of cylinders assigned by each loadman to set of delivery-man.
 
 ```
-  Example:
-    loadman Name:
-    loadman Age:
-    loadman Address:
-    loadman Phone Number:
-    loadman photo:
+# Uniquely identifies the vehicle
+site:
+    site_id
+    site_name: dummy (optional)
+    vehicle_number: varchar: UP-1234
+    vehicle_fitness_due_date : Datetime : 2020-12-12
+    vehicale_insurance_due_date: Datetime : 2021-12-12
+    vehicle_pollution_due_date:  Datetime : 2021-12-12
+    vehicle_fire_cylinder_due_date:  Datetime : 2021-12-12
+
+# loadman
+loadman:
+    loadman_id
+    site_id
+    name
+    address
+    phone_number
+    date_of_birth
+    photo_id
 ```
 
 - Ability to add/update cylinder types/categories. (Example: 14.2 kg, 19 kg)
@@ -69,7 +80,7 @@ Breakdown example:
         300 cylinders of size 14.2 kg
         300 cylinders of size 19 kg
 
-    1000 cylinders to(issue = give back) Indian Oil
+    1000 cylinders released to Indian Oil
         200 cylinders of size 5 kg domestic
         200 cylinders of size 5 kg commercial
         300 cylinders of size 14.2 kg
@@ -146,3 +157,94 @@ CASE 3: Transfer connection (count of empty cylinders increases than stipulated 
 Day-start: Start of day 7:00 AM
 Day-end: End of day 7:00 AM
 
+```
+orders
+- 1000 cylinders received, Indian oil. O1, created date: 2020-10-01
+- 1000 cylinders sent back, Indian oil. O2 created date: 2020-10-10
+- 300 cylinders given to loadman1, Indian oil. O3
+```
+
+Role manager
+last 15 orders
+
+Godown to loadman
+Order 1
+Challan: Issued 200 cylinders
+
+loadman to Godown
+Order 2
+Challan:
+Issued empty 190 cylinders
+Issued full 5 cylinders
+5 cylinders sent for new connections
+
+Order 3
+Challan:
+Issued empty 200 cylinders
+5 cylinders received via transfer out
+
+```
+Loadman:
+
+ Message: 200 cylinders in transit
+ Button: Accept
+
+Godown:
+    Received:
+        - order6
+        - order5
+        - order4
+        - order3
+        - order2
+        - order1
+    Sent:
+        - order1
+        - order2
+        - order3
+        - order4
+        - order5
+        - order6
+deliveryman1:
+    - order1
+    - order2
+    - order3
+    - order4
+    - order5
+    - order6
+deliveryman2:
+    - order1
+    - order2
+    - order3
+    - order4
+    - order5
+    - order6
+deliveryman3:
+    - order1
+    - order2
+    - order3
+    - order4
+    - order5
+    - order6
+deliveryman4:
+    - order1
+    - order2
+    - order3
+    - order4
+    - order5
+    - order6
+deliveryman5:
+    - order1
+    - order2
+    - order3
+    - order4
+    - order5
+    - order6
+deliveryman6:
+    - order1
+    - order2
+    - order3
+    - order4
+    - order5
+    - order6
+
+```
