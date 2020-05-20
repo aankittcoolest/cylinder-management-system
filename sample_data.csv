@@ -1,67 +1,69 @@
-user_category
-category_id,category_name
-1,office_manager
-2,warehouse_manager
-3,load_manager
-4,delivery_manager
-
-user
-user_id,username,password,category_id
-1,ankit,ankit,1
-2,ashish,ankit,1
-3,harshit,ankit,2
-4,anupam,anupam,3
-5,chintu,chintu,4
-
-user_profile
+user_category,,,,,
+category_id,category_name,,,,
+1,office_manager,,,,
+2,warehouse_manager,,,,
+3,load_manager,,,,
+4,delivery_manager,,,,
+,,,,,
+user,,,,,
+user_id,username,password,category_id,,
+1,smishra,smishra,1,,
+2,ashish,ankit,1,,
+3,harshit,ankit,2,,
+4,anupam,anupam,3,,
+5,chintu,chintu,4,,
+,,,,,
+user_profile,,,,,
 user_id,name,address,phone_number,photo_id,date_of_birth
 1,Ankit Agrawal,3/1189 Teli Para Lal Darwaja Mathura,123456789,1,1111-22-33
-
-cylinder_type
-cylinder_type_id,size,tag
-1,5,commercial
-2,5,domestic
-3,14,domestic
-
-order_type
-order_type_id,name
-1,warehouse_manager_receive_from_company
-2,warehouse_manager_issue_to_company
-3,warehouse_manager_issue_to_loadman
-4,warehouse_manager_receive_from_loadman
-5,load_manager_receive_from_delivery_manager
-6,load_manager_issue_to_delivery_manager
-
-order_sub_type
-order_sub_type_id,name
-1, normal_flow
-2, special_issued_to_new_client
-3, speical_received_from_transfer_client
-
-order
-order_id,order_type_id,order_datetime,current_status,user_id
-1,1, 2020-12-01 12:00:00,approved,3
-2,3, 2020-12-02 08:00:00,in_transit,3
-3,3, 2020-12-03 08:00:00, approved,3
-4,4, 2020-12-02 20:00:00,in_transit,4
-5,4, 2020-12-03 20:00:00, approved,4
-6,6, 2020-12-03 13:00:00, approved,4
-7,6, 2020-12-03 14:00:00, approved,4
-
-sub_order
-sub_order_id,order_id,cylinder_type_id,cylinder_count,order_sub_type_id
-1,1,1,500,1
-2,1,2,1000,1
-3,1,3,400,1
-4,2,3,100,1
-5,2,1,50,1
-6,3,2,100,1
-7,3,3,200,1
-8,4,3,100,1
-9,4,1,50,1
-10,5,2,100,1
-11,5,3,200,1
-12,5,3,2,2
+,,,,,
+cylinder_type,,,,,
+cylinder_type_id,size,tag,,,
+1,5,commercial,,,
+2,5,domestic,,,
+3,14,domestic,,,
+,,,,,
+order_type,,,,,
+order_type_id,name,,,,
+1,warehouse_manager_receive_from_company,,,,
+2,warehouse_manager_issue_to_company,,,,
+3,warehouse_manager_issue_to_loadman,,,,
+4,warehouse_manager_receive_from_loadman,,,,
+5,load_manager_receive_from_delivery_manager,,,,
+6,load_manager_issue_to_delivery_manager,,,,
+,,,,,
+order_sub_type,,,,,
+order_sub_type_id,name,,,,
+1, normal_flow,,,,
+2, special_issued_to_new_client,,,,
+3, speical_received_from_transfer_client,,,,
+,,,,,
+order,,,,,
+order_id,order_type_id,order_datetime,current_status,user_id,
+1,1, 2020-12-01 12:00:00,approved,3,
+2,3, 2020-12-02 08:00:00,in_transit,3,
+3,3, 2020-12-03 08:00:00, approved,3,
+4,4, 2020-12-02 20:00:00,in_transit,4,
+5,4, 2020-12-03 20:00:00, approved,4,
+6,6, 2020-12-03 13:00:00, approved,4,
+7,6, 2020-12-03 14:00:00, approved,4,
+,,,,,
+sub_order,,,,,
+sub_order_id,order_id,cylinder_type_id,cylinder_count,order_sub_type_id,
+1,1,1,500,1,
+2,1,2,1000,1,
+3,1,3,400,1,
+4,2,3,100,1,
+5,2,1,50,1,
+6,3,2,100,1,
+7,3,3,200,1,
+8,4,3,100,1,
+9,4,1,50,1,
+10,5,2,100,1,
+11,5,3,200,1,
+12,5,3,2,2,
 13,6,1,2,2,1
 14,6,2,2,2,2
 15,6,3,2,2,1
+,,,,,
+test,,,,,
