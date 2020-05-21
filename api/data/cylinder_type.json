@@ -1,0 +1,17 @@
+[
+  {
+    "cylinder_type_id": 1,
+    "size": 5,
+    "tag": "commercial"
+  },
+  {
+    "cylinder_type_id": 2,
+    "size": 5,
+    "tag": "domestic"
+  },
+  {
+    "cylinder_type_id": 3,
+    "size": 14,
+    "tag": "domestic"
+  }
+]

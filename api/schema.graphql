@@ -1,0 +1,54 @@
+type Query {
+  users: [User]
+  order(order_id: Int!): Order
+}
+
+type Mutation {
+  createUser(input: createUserInput): User
+  createOrder(input: createOrderInput): Int
+  createSubOrder(input: createSubOrderInput): Int
+}
+
+type User {
+  user_id: ID!
+  name: String
+  address: String
+  phone_number: String
+  date_of_birth: String
+}
+
+type Order {
+  order_id: Int
+  order_type_id: Int
+  order_datetime: String
+  current_status: String
+  sub_orders: [SubOrder]
+}
+
+type SubOrder {
+  sub_order_id: Int
+  cylinder_type_id: Int
+  cylinder_count: Int
+  order_sub_type_id: Int
+}
+
+input createUserInput {
+  name: String
+  address: String
+  phone_number: String
+  date_of_birth: String
+}
+
+input createOrderInput {
+  order_type_id: Int!
+  order_datetime: String!
+  current_status: String!
+  user_id: Int!
+}
+
+input createSubOrderInput {
+  order_id: Int!
+  cylinder_type_id: Int!
+  cylinder_count: Int!
+  order_sub_type_id: Int!
+}

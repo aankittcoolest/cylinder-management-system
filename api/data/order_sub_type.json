@@ -1,0 +1,14 @@
+[
+  {
+    "order_sub_type_id": 1,
+    "name": "normal_flow"
+  },
+  {
+    "order_sub_type_id": 2,
+    "name": "special_issued_to_new_client"
+  },
+  {
+    "order_sub_type_id": 3,
+    "name": "speical_received_from_transfer_client"
+  }
+]

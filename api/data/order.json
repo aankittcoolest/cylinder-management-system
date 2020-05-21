@@ -1,0 +1,51 @@
+[
+  {
+    "order_id": 1,
+    "order_type_id": 1,
+    "order_datetime": "2020-12-01 12:00:00",
+    "current_status": "approved",
+    "user_id": 3
+  },
+  {
+    "order_id": 2,
+    "order_type_id": 3,
+    "order_datetime": "2020-12-02 08:00:00",
+    "current_status": "in_transit",
+    "user_id": 3
+  },
+  {
+    "order_id": 3,
+    "order_type_id": 3,
+    "order_datetime": "2020-12-03 08:00:00",
+    "current_status": "approved",
+    "user_id": 3
+  },
+  {
+    "order_id": 4,
+    "order_type_id": 4,
+    "order_datetime": "2020-12-02 20:00:00",
+    "current_status": "in_transit",
+    "user_id": 4
+  },
+  {
+    "order_id": 5,
+    "order_type_id": 4,
+    "order_datetime": "2020-12-03 20:00:00",
+    "current_status": "approved",
+    "user_id": 4
+  },
+  {
+    "order_id": 6,
+    "order_type_id": 6,
+    "order_datetime": "2020-12-03 13:00:00",
+    "current_status": "approved",
+    "user_id": 4
+  },
+  {
+    "order_id": 7,
+    "order_type_id": 6,
+    "order_datetime": "2020-12-03 14:00:00",
+    "current_status": "approved",
+    "user_id": 4
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    user_id: 1,
+    username: "smishra",
+    password: "smishra",
+    category_id: 1,
+  },
+  {
+    user_id: 2,
+    username: "ashish",
+    password: "ankit",
+    category_id: 1,
+  },
+  {
+    user_id: 3,
+    username: "harshit",
+    password: "ankit",
+    category_id: 2,
+  },
+  {
+    user_id: 4,
+    username: "anupam",
+    password: "anupam",
+    category_id: 3,
+  },
+  {
+    user_id: 5,
+    username: "chintu",
+    password: "chintu",
+    category_id: 4,
+  },
+];

@@ -1,0 +1,26 @@
+[
+  {
+    "order_type_id": 1,
+    "name": "warehouse_manager_receive_from_company"
+  },
+  {
+    "order_type_id": 2,
+    "name": "warehouse_manager_issue_to_company"
+  },
+  {
+    "order_type_id": 3,
+    "name": "warehouse_manager_issue_to_loadman"
+  },
+  {
+    "order_type_id": 4,
+    "name": "warehouse_manager_receive_from_loadman"
+  },
+  {
+    "order_type_id": 5,
+    "name": "load_manager_receive_from_delivery_manager"
+  },
+  {
+    "order_type_id": 6,
+    "name": "load_manager_issue_to_delivery_manager"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "user_id": 1,
+    "name": "Ankit Agrawal",
+    "address": "3/1189 Teli Para Lal Darwaja Mathura",
+    "phone_number": 123456789,
+    "photo_id": 1,
+    "date_of_birth": "1111-22-33"
+  }
+]
